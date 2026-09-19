@@ -106,6 +106,8 @@ A curated list of AI tools and [Model Context Protocol](https://modelcontextprot
 
 ## AI Compliance Tools for Law Firms
 
+- **[Statsnet MCP](https://github.com/usenetstate/statsnet-mcp)** — Background check any company in the world: registration, executives, courts and finances.  
+  _Free · remote_ · MCP: `https://statsnet.co/mcp` · [website](https://statsnet.co)
 - **[Diligent Compliance](https://legalaimcp.com/servers/diligent-compliance)** — AI-driven regulatory compliance monitoring — track regulatory changes and assess impact on your practice.  
   _Contact for pricing · ✅ link-verified_ · [website](https://www.diligent.com)
 - **[Nerq AI Compliance Intelligence](https://legalaimcp.com/servers/nerq-ai-compliance)** — Access the world's largest AI agent compliance database for responsible AI governance  
