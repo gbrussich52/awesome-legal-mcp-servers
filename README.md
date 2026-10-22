@@ -41,6 +41,8 @@ A curated list of AI tools and [Model Context Protocol](https://modelcontextprot
   _Free · ✅ link-verified_ · [website](https://github.com/JamesANZ/us-legal-mcp)
 - **[vLex Vincent AI](https://legalaimcp.com/servers/vlex-vincent)** — AI-powered legal research across 130+ jurisdictions — case law, legislation, and secondary sources.  
   _Paid · ✅ link-verified_ · [website](https://vlex.com/vincent-ai)
+- **[Court Rules](https://mcp.courtrules.app/mcp)** — Free reference for U.S. federal court rules, local rules, judge standing orders and court holidays, with a deadline calculator, a public API and an MCP server.  
+  _Free · ✅ link-verified_ · [website](https://www.courtrules.app/)
 
 ## AI Document & Contract Tools for Law Firms
 
