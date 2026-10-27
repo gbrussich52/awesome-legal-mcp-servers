@@ -4,7 +4,7 @@
 
 A curated list of AI tools and [Model Context Protocol](https://modelcontextprotocol.io) (MCP) servers built for law firms — legal research, contract review, case management, billing, client intake, and compliance. Maintained alongside [legalaimcp.com](https://legalaimcp.com), a searchable directory of the same data with an MCP server of its own ([`legalaimcp.com/mcp`](https://legalaimcp.com/mcp)) — search, get-one-tool, list-categories, and a firm-size-aware recommendation tool, all read-only, no auth.
 
-"Links verified" below means an automated check confirmed the URL resolved as of the noted date — not an endorsement, security audit, or legal review. This is software analysis, not legal advice; consult your own judgment and, where it matters, your bar's ethics rules.
+"Links verified" below means an automated check confirmed the URL resolved as of the noted date. It does not establish product capabilities or MCP support, and is not an endorsement, security audit, or legal review. This is software analysis, not legal advice; consult your own judgment and, where it matters, your bar's ethics rules.
 
 ## Contents
 
@@ -67,8 +67,6 @@ A curated list of AI tools and [Model Context Protocol](https://modelcontextprot
   _Paid_ · [website](https://www.clio.com)
 - **[ConflictCheck AI](https://legalaimcp.com/servers/conflictcheck-ai)** — Run conflict of interest checks across your firm in seconds instead of hours  
   _Paid · ✅ link-verified_ · [website](https://conflictcheck.ai)
-- **[DeadlineWatch MCP](https://legalaimcp.com/servers/deadlinewatch-mcp)** — Never miss a court deadline with AI-powered calendaring and statute of limitations tracking  
-  _Freemium · ✅ link-verified_ · [website](https://deadlinewatch.com)
 - **[Legal MCP by Agentic Ops](https://legalaimcp.com/servers/legal-mcp-agentic)** — Comprehensive MCP server bridging AI assistants with legal databases and case tools  
   _Free · ✅ link-verified_ · [website](https://github.com/agentic-ops/legal-mcp)
 - **[Lex Machina](https://legalaimcp.com/servers/lex-machina)** — Legal analytics platform — AI-driven insights on judges, attorneys, parties, and case outcomes.  
