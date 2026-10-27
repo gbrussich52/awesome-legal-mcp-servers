@@ -1,141 +1,153 @@
-# Awesome Legal MCP Servers & AI Tools for Law Firms
+# Awesome Legal AI Tools & MCP Servers
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![legalaimcp.com](https://img.shields.io/badge/directory-legalaimcp.com-1a1a2e)](https://legalaimcp.com)
+A source-backed directory of software relevant to law-firm workflows, maintained alongside [LegalAIMCP](https://legalaimcp.com/servers). It includes standalone AI products, documented MCP implementations and general tools; a general tool is not presented as a purpose-built legal product.
 
-A curated list of AI tools and [Model Context Protocol](https://modelcontextprotocol.io) (MCP) servers built for law firms — legal research, contract review, case management, billing, client intake, and compliance. Maintained alongside [legalaimcp.com](https://legalaimcp.com), a searchable directory of the same data with an MCP server of its own ([`legalaimcp.com/mcp`](https://legalaimcp.com/mcp)) — search, get-one-tool, list-categories, and a firm-size-aware recommendation tool, all read-only, no auth.
+**42 published products · primary documentation reviewed October 27, 2026.** Review covers the named product and the exact published description. Customer-account operation, security and legal-output accuracy have not been independently tested. A working link alone does not establish capability or MCP support.
 
-"Links verified" below means an automated check confirmed the URL resolved as of the noted date. It does not establish product capabilities or MCP support, and is not an endorsement, security audit, or legal review. This is software analysis, not legal advice; consult your own judgment and, where it matters, your bar's ethics rules.
+## Legal Research
 
-## Contents
+- **[CanLII MCP (Vaquill community implementation)](https://legalaimcp.com/servers/canlii-legal-research)** — Community connector for Canadian case-law and legislation metadata through the CanLII API.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/Vaquill-AI/canlii-mcp). [Primary source 1](https://raw.githubusercontent.com/Vaquill-AI/canlii-mcp/main/README.md).
 
-- [AI Legal Research Tools & Case Law Search](#ai-legal-research-tools--case-law-search)
-- [AI Document & Contract Tools for Law Firms](#ai-document--contract-tools-for-law-firms)
-- [AI Case & Matter Management Tools for Law Firms](#ai-case--matter-management-tools-for-law-firms)
-- [AI Client Intake & Communication Tools for Law Firms](#ai-client-intake--communication-tools-for-law-firms)
-- [AI Time Tracking & Billing Tools for Law Firms](#ai-time-tracking--billing-tools-for-law-firms)
-- [AI Compliance Tools for Law Firms](#ai-compliance-tools-for-law-firms)
-- [General-Purpose AI Tools for Legal Practice](#general-purpose-ai-tools-for-legal-practice)
-- [Contributing](#contributing)
+- **[Cerebra Legal MCP Server](https://legalaimcp.com/servers/cerebra-legal-server)** — Community MCP tools for structured legal reasoning, follow-up questions and formatted results.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/yoda-digital/mcp-cerebra-legal-server). [Primary source 1](https://raw.githubusercontent.com/yoda-digital/mcp-cerebra-legal-server/main/README.md).
 
-## AI Legal Research Tools & Case Law Search
+- **[CoCounsel Legal](https://legalaimcp.com/servers/cocounsel)** — Thomson Reuters legal AI for research, analysis and drafting.  
+  Confirm current terms with the vendor. [Product / maintainer](https://legal.thomsonreuters.com/en/products/cocounsel-legal). [Primary source 1](https://legal.thomsonreuters.com/en/products/cocounsel-legal).
 
-- **[CoCounsel by Thomson Reuters](https://legalaimcp.com/servers/cocounsel)** — AI legal assistant powered by GPT — search case law, summarize documents, draft correspondence.  
-  _Paid · ✅ link-verified_ · [website](https://legal.thomsonreuters.com/en/products/cocounsel-legal)
-- **[CourtListener MCP (Official)](https://legalaimcp.com/servers/courtlistener-mcp)** — Free Law Project's official MCP server — search millions of court opinions, dockets, and judges from your AI assistant.  
-  _Freemium · ✅ link-verified_ · MCP: `claude mcp add --transport http courtlistener https://mcp.courtlistener.com` · [website](https://mcp.courtlistener.com)
-- **[CourtListener Research MCP](https://legalaimcp.com/servers/courtlistener-research-mcp)** — Search 3,352 US courts for cases, judges, citations, and PACER dockets with AI  
-  _Free · ✅ link-verified_ · [website](https://glama.ai/mcp/servers/categories/legal-and-compliance)
-- **[Harvey AI](https://legalaimcp.com/servers/harvey-ai)** — Generative AI platform built for legal professionals — research, draft, and analyze with domain-specific AI.  
-  _Contact for pricing · ✅ link-verified_ · [website](https://www.harvey.ai)
-- **[Harvey MCP](https://legalaimcp.com/servers/harvey-mcp)** — Connect Harvey AI legal intelligence to any MCP-compatible assistant  
-  _Paid · ✅ link-verified_ · [website](https://developers.harvey.ai/guides/harvey_mcp)
-- **[CanLII Legal Research](https://legalaimcp.com/servers/canlii-legal-research)** — Search Canadian case law and legislation from CanLII directly through your AI assistant  
-  _Free · ✅ link-verified_ · [website](https://skywork.ai/skypage/en/legal-ai-canlii-mcp/1981650989910913024)
-- **[Cerebra Legal Server](https://legalaimcp.com/servers/cerebra-legal-server)** — Enterprise-grade legal reasoning and analysis powered by structured thinking  
-  _Freemium · ✅ link-verified_ · [website](https://github.com/yoda-digital/mcp-cerebra-legal-server)
-- **[CourtListener Citations Checker](https://legalaimcp.com/servers/courtlistener-citations-checker)** — Catch hallucinated case citations — verify every cite against CourtListener's opinion corpus before it reaches a filing.  
-  _Free · ✅ link-verified_ · [MCP repo](https://github.com/john-walkoe/courtlistener_citations_mcp) · [website](https://github.com/john-walkoe/courtlistener_citations_mcp)
-- **[CourtListener MCP (Self-Hosted)](https://legalaimcp.com/servers/courtlistener-mcp-self-hosted)** — Open-source community MCP server for CourtListener — run it locally or on your own infrastructure.  
-  _Free · ✅ link-verified_ · [MCP repo](https://github.com/blakeox/courtlistener-mcp) · [website](https://github.com/blakeox/courtlistener-mcp)
-- **[US Legal MCP](https://legalaimcp.com/servers/us-legal-mcp)** — Query 130+ US federal statutes and regulations directly from your AI assistant  
-  _Free · ✅ link-verified_ · [website](https://github.com/JamesANZ/us-legal-mcp)
-- **[vLex Vincent AI](https://legalaimcp.com/servers/vlex-vincent)** — AI-powered legal research across 130+ jurisdictions — case law, legislation, and secondary sources.  
-  _Paid · ✅ link-verified_ · [website](https://vlex.com/vincent-ai)
+- **[CourtListener Citation Validation MCP (community)](https://legalaimcp.com/servers/courtlistener-citations-checker)** — Check case citations against the CourtListener index with a community MCP server.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/john-walkoe/courtlistener_citations_mcp). [Primary source 1](https://raw.githubusercontent.com/john-walkoe/courtlistener_citations_mcp/master/README.md).
 
-## AI Document & Contract Tools for Law Firms
+- **[CourtListener MCP (blakeox community)](https://legalaimcp.com/servers/courtlistener-mcp-self-hosted)** — Community CourtListener tools for local or self-hosted MCP deployments.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/blakeox/courtlistener-mcp). [Primary source 1](https://raw.githubusercontent.com/blakeox/courtlistener-mcp/main/README.md).
 
-- **[Ironclad](https://legalaimcp.com/servers/ironclad)** — AI contract lifecycle management — draft, negotiate, sign, and manage contracts.  
-  _Paid · ✅ link-verified_ · [website](https://ironcladapp.com)
-- **[Luminance](https://legalaimcp.com/servers/luminance)** — AI-powered contract review and negotiation platform for legal teams.  
-  _Contact for pricing · ✅ link-verified_ · [website](https://www.luminance.com)
-- **[RedlineAI](https://legalaimcp.com/servers/redlineai)** — Automated contract redlining with clause-level explanations.  
-  _Paid · ✅ link-verified_ · [website](https://redlineai.com)
-- **[AWS Document Loader MCP](https://legalaimcp.com/servers/aws-document-loader-mcp)** — Parse PDFs, Word docs, Excel files, and PowerPoint presentations for AI analysis  
-  _Free · ✅ link-verified_ · [website](https://awslabs.github.io/mcp/servers/document-loader-mcp-server)
-- **[Concord Contract Intelligence](https://legalaimcp.com/servers/concord-contract-intelligence)** — Analyze contracts and extract key terms using AI-powered MCP integration with Concord  
-  _Paid · ✅ link-verified_ · [website](https://www.concord.app/blog/what-the-model-context-protocol-(mcp)-means-for-legal-and-enterprise-data)
-- **[Gavel](https://legalaimcp.com/servers/gavel)** — No-code document automation for law firms — generate legal documents from questionnaires.  
-  _Freemium · ✅ link-verified_ · [website](https://www.gavel.io)
-- **[Kira Systems](https://legalaimcp.com/servers/kira-systems)** — Machine learning contract analysis for due diligence and lease abstraction.  
-  _Contact for pricing · ✅ link-verified_ · [website](https://kirasystems.com)
-- **[PDF Reader MCP](https://legalaimcp.com/servers/pdf-reader-mcp)** — Extract text, images, and metadata from PDFs up to 10x faster with parallel processing  
-  _Free · ✅ link-verified_ · [website](https://github.com/SylphxAI/pdf-reader-mcp)
+- **[CourtListener MCP (Free Law Project)](https://legalaimcp.com/servers/courtlistener-mcp)** — Official CourtListener access for case law, dockets, judges, citations and alerts.  
+  Free and paid plans; confirm limits. [Product / maintainer](https://mcp.courtlistener.com/). [Primary source 1](https://raw.githubusercontent.com/freelawproject/courtlistener-api-client/main/MCP_README.md).
 
-## AI Case & Matter Management Tools for Law Firms
+- **[Firecrawl Government & Legal Index](https://legalaimcp.com/servers/firecrawl-gov-index)** — Search an index of U.S. government and legal sources for AI-assisted research.  
+  Free software; connected services may charge. [Product / maintainer](https://www.firecrawl.dev/gov-index). [Primary source 1](https://www.firecrawl.dev/gov-index).
 
-- **[Clio](https://legalaimcp.com/servers/clio)** — Cloud-based legal practice management with AI-powered workflows and billing.  
-  _Paid_ · [website](https://www.clio.com)
-- **[ConflictCheck AI](https://legalaimcp.com/servers/conflictcheck-ai)** — Run conflict of interest checks across your firm in seconds instead of hours  
-  _Paid · ✅ link-verified_ · [website](https://conflictcheck.ai)
-- **[Legal MCP by Agentic Ops](https://legalaimcp.com/servers/legal-mcp-agentic)** — Comprehensive MCP server bridging AI assistants with legal databases and case tools  
-  _Free · ✅ link-verified_ · [website](https://github.com/agentic-ops/legal-mcp)
-- **[Lex Machina](https://legalaimcp.com/servers/lex-machina)** — Legal analytics platform — AI-driven insights on judges, attorneys, parties, and case outcomes.  
-  _Paid · ✅ link-verified_ · [website](https://lexmachina.com)
-- **[Smokeball](https://legalaimcp.com/servers/smokeball)** — AI-assisted practice management built for small law firms — automatic time tracking and document management.  
-  _Paid · ✅ link-verified_ · [website](https://www.smokeball.com)
-- **[Clio Matter Manager](https://legalaimcp.com/servers/clio-matter-manager)** — Manage cases, contacts, tasks, and deadlines in Clio through your AI assistant  
-  _Paid_ · [website](https://www.clio.com)
+- **[German Law MCP (Ansvar Systems)](https://legalaimcp.com/servers/german-law-mcp)** — German legal-source access through the Ansvar MCP gateway or a self-hosted build.  
+  Free and paid plans; confirm limits. [Product / maintainer](https://github.com/Ansvar-Systems/German-law-mcp). [Primary source 1](https://raw.githubusercontent.com/Ansvar-Systems/German-law-mcp/main/README.md).
 
-## AI Client Intake & Communication Tools for Law Firms
+- **[Harvey](https://legalaimcp.com/servers/harvey-ai)** — Commercial legal AI for research, document analysis and legal workflows.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.harvey.ai/). [Primary source 1](https://www.harvey.ai/).
 
-- **[ClientIntake AI](https://legalaimcp.com/servers/clientintake-ai)** — Automate client intake and conflict checks for your firm.  
-  _Paid · ✅ link-verified_ · [website](https://clientintake.ai)
-- **[Smith.ai](https://legalaimcp.com/servers/smith-ai)** — AI-powered virtual receptionist and chat service for law firms — 24/7 client communication.  
-  _Paid · ✅ link-verified_ · [website](https://smith.ai)
-- **[ClientPortal AI](https://legalaimcp.com/servers/clientportal-ai)** — Give clients a self-service AI portal that answers case status questions 24/7  
-  _Paid · ✅ link-verified_ · [website](https://clientportal.ai)
-- **[Lawdroid](https://legalaimcp.com/servers/lawdroid)** — AI chatbot builder for law firms — automate client intake, FAQs, and lead qualification.  
-  _Freemium · ✅ link-verified_ · [website](https://lawdroid.com)
-- **[LegalChat Receptionist](https://legalaimcp.com/servers/legalchat-receptionist)** — AI-powered live chat and phone answering for your law firm website  
-  _Paid · ✅ link-verified_ · [website](https://legalchat.ai)
+- **[Harvey MCP (beta)](https://legalaimcp.com/servers/harvey-mcp)** — Vendor-documented MCP tools for Harvey questions, Vault documents and enabled research sources.  
+  Confirm current terms with the vendor. [Product / maintainer](https://developers.harvey.ai/guides/harvey_mcp). [Primary source 1](https://developers.harvey.ai/guides/harvey_mcp.md).
 
-## AI Time Tracking & Billing Tools for Law Firms
+- **[Lex Machina](https://legalaimcp.com/servers/lex-machina)** — Litigation analytics for judges, parties, counsel and case outcomes.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.lexisnexis.com/en-us/products/lex-machina.page). [Primary source 1](https://www.lexisnexis.com/en-us/products/lex-machina.page).
 
-- **[Billing AI by Checkbox](https://legalaimcp.com/servers/billing-ai-checkbox)** — AI-powered legal billing review — flag billing guideline violations before submission.  
-  _Contact for pricing · ✅ link-verified_ · [website](https://www.checkbox.ai/use-cases)
-- **[FreshBooks Legal Billing](https://legalaimcp.com/servers/freshbooks-legal-billing)** — Automate invoicing and time tracking for your firm through FreshBooks and AI  
-  _Freemium · ✅ link-verified_ · [website](https://github.com/roboulos/freshbooks-mcp)
-- **[Invoice My Clients MCP](https://legalaimcp.com/servers/invoice-my-clients-mcp)** — Create invoices, log billable hours, and manage client billing with natural language  
-  _Freemium · ✅ link-verified_ · [website](https://www.invoicemyclients.com/features/mcp-server)
-- **[Paymo Time Tracker MCP](https://legalaimcp.com/servers/paymo-time-tracker-mcp)** — Track billable hours and generate invoice timesheets with AI through Paymo  
-  _Freemium · ✅ link-verified_ · [website](https://github.com/feamster/paymo-mcp)
-- **[TimeSolv](https://legalaimcp.com/servers/timesolv)** — Cloud-based legal billing with AI-powered time entry suggestions and invoice automation.  
-  _Paid · ✅ link-verified_ · [website](https://www.timesolv.com)
+- **[Open Legal Compliance MCP](https://legalaimcp.com/servers/open-legal-compliance-mcp)** — Community MCP for searching public legal and regulatory sources.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/TCoder920x/open-legal-compliance-mcp). [Primary source 1](https://raw.githubusercontent.com/TCoder920x/open-legal-compliance-mcp/HEAD/README.md).
 
-## AI Compliance Tools for Law Firms
+- **[Regulations.gov MCP by 1102tools](https://legalaimcp.com/servers/regulationsgov-mcp)** — Independent connector for rulemaking dockets, documents and public comments.  
+  Free software; connected services may charge. [Product / maintainer](https://1102tools.com/mcp/regulations-gov). [Primary source 1](https://1102tools.com/mcp/regulations-gov).
 
-- **[Diligent Compliance](https://legalaimcp.com/servers/diligent-compliance)** — AI-driven regulatory compliance monitoring — track regulatory changes and assess impact on your practice.  
-  _Contact for pricing · ✅ link-verified_ · [website](https://www.diligent.com)
-- **[Nerq AI Compliance Intelligence](https://legalaimcp.com/servers/nerq-ai-compliance)** — Access the world's largest AI agent compliance database for responsible AI governance  
-  _Freemium · ✅ link-verified_ · [website](https://glama.ai/mcp/servers/nerq-ai/mcp-server)
-- **[Open Legal Compliance MCP](https://legalaimcp.com/servers/open-legal-compliance-mcp)** — Search and analyze legal documents from US federal, state, EU, and case law sources  
-  _Free · ✅ link-verified_ · [website](https://github.com/TCoder920x/open-legal-compliance-mcp)
-- **[PageGuard Privacy Compliance](https://legalaimcp.com/servers/pageguard-privacy-compliance)** — Scan your websites and apps for privacy compliance issues before regulators do  
-  _Freemium · ✅ link-verified_ · [website](https://glama.ai/mcp/servers/pageguard/pageguard-mcp)
-- **[Regulations.gov MCP](https://legalaimcp.com/servers/regulationsgov-mcp)** — Access federal rulemaking dockets, proposed rules, and public comments via AI  
-  _Free · ✅ link-verified_ · [website](https://glama.ai/mcp/servers/1102tools/regulationsgov-mcp)
-- **[Relativity](https://legalaimcp.com/servers/relativity)** — AI-powered eDiscovery and compliance platform — find, review, and produce relevant documents at scale.  
-  _Paid · ✅ link-verified_ · [website](https://www.relativity.com)
+- **[US Legal MCP](https://legalaimcp.com/servers/us-legal-mcp)** — Community MCP research tools for US bills, regulations and court opinions.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/JamesANZ/us-legal-mcp). [Primary source 1](https://raw.githubusercontent.com/JamesANZ/us-legal-mcp/HEAD/README.md).
 
-## General-Purpose AI Tools for Legal Practice
+- **[Vincent by vLex](https://legalaimcp.com/servers/vlex-vincent)** — AI-assisted legal research, analysis and configurable legal workflows.  
+  Confirm current terms with the vendor. [Product / maintainer](https://vlex.com/vincent-ai). [Primary source 1](https://vlex.com/vincent-ai).
 
-- **[NYClaw.io Custom AI Development](https://legalaimcp.com/servers/nyclaw-custom-development)** — Custom MCP servers built for your firm's specific tools and workflows.  
-  _Contact for pricing · ✅ link-verified_ · [website](https://nyclaw.io/#contact)
-- **[Anthropic Claude for Legal](https://legalaimcp.com/servers/claude-legal)** — General-purpose AI assistant with strong legal reasoning — research, drafting, analysis, and summarization.  
-  _Freemium · ✅ link-verified_ · [website](https://www.anthropic.com/claude)
-- **[Composio Legal Toolkit](https://legalaimcp.com/servers/composio-legal-toolkit)** — Connect your AI assistant to 850+ business tools including CRM, email, and calendars  
-  _Freemium · ✅ link-verified_ · [website](https://mcp.composio.dev/)
-- **[German Law MCP](https://legalaimcp.com/servers/german-law-mcp)** — Query 6,870 German federal statutes directly from your AI assistant  
-  _Free · ✅ link-verified_ · [website](https://github.com/Ansvar-Systems/German-law-mcp)
-- **[Scoro Practice Analytics](https://legalaimcp.com/servers/scoro-practice-analytics)** — Track firm profitability, utilization, and project performance with AI-powered analytics  
-  _Paid · ✅ link-verified_ · [website](https://www.scoro.com/blog/scoro-version-update-25-10/)
-- **[Supabase Legal MCP Server](https://legalaimcp.com/servers/supabase-legal-mcp)** — Open-source MCP server template for connecting AI assistants to legal databases on Supabase.  
-  _Free · ✅ link-verified_ · MCP: `npx @anthropic-ai/create-mcp supabase-legal` · [website](https://github.com/supabase-community/supabase-mcp)
+## Document and Contract Work
 
-## Contributing
+- **[anymd (formerly PDF Reader MCP)](https://legalaimcp.com/servers/pdf-reader-mcp)** — General local MCP and command-line document-to-Markdown extraction.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/SylphxAI/anymd). [Primary source 1](https://raw.githubusercontent.com/SylphxAI/anymd/HEAD/README.md).
 
-This list mirrors the directory at [legalaimcp.com](https://legalaimcp.com). To add or correct a listing, [submit it there](https://legalaimcp.com/submit) — new and updated tools sync back to this repo. Read-only automated link checks run weekly; see [legalaimcp.com/about](https://legalaimcp.com/about) for how verification works.
+- **[AWS Labs Document Loader MCP](https://legalaimcp.com/servers/aws-document-loader-mcp)** — General-purpose document parsing for PDF, Word, Excel, PowerPoint and image files.  
+  Free software; connected services may charge. [Product / maintainer](https://awslabs.github.io/mcp/servers/document-loader-mcp-server). [Primary source 1](https://raw.githubusercontent.com/awslabs/mcp/main/src/document-loader-mcp-server/README.md).
 
-## License
+- **[Concord](https://legalaimcp.com/servers/concord-contract-intelligence)** — AI-assisted contract management, review and lifecycle workflows.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.concord.app/). [Primary source 1](https://www.concord.app/).
 
-[CC0](https://creativecommons.org/publicdomain/zero/1.0/) — this list. Individual tools retain their own licenses.
+- **[Gavel](https://legalaimcp.com/servers/gavel)** — Legal document automation and a separate AI contract-review product.  
+  Paid; confirm current terms. [Product / maintainer](https://www.gavel.io/). [Primary source 1](https://www.gavel.io/) · [Primary source 2](https://www.gavel.io/pricing).
+
+- **[iManage Work](https://legalaimcp.com/servers/imanage-work)** — Document and email management with vendor-documented AI-assistant connectors.  
+  Confirm current terms with the vendor. [Product / maintainer](https://docs.imanage.com/ai/mcpserver-user-help/en-US/Adding_MCP_connectors_for_Claude.html). [Primary source 1](https://docs.imanage.com/ai/mcpserver-user-help/en-US/Adding_MCP_connectors_for_Claude.html) · [Primary source 2](https://imanage.com/imanage-products/document-email-management/work/).
+
+- **[Ironclad](https://legalaimcp.com/servers/ironclad)** — Contract lifecycle software with documented contract-search and obligation connectors.  
+  Confirm current terms with the vendor. [Product / maintainer](https://ironcladapp.com/). [Primary source 1](https://ironcladapp.com/) · [Primary source 2](https://support.ironcladapp.com/api/v2/help_center/en-us/articles/39887632957463.json).
+
+- **[Kira by Litera](https://legalaimcp.com/servers/kira-systems)** — AI-assisted contract review and extraction for due diligence.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.litera.com/capabilities/review). [Primary source 1](https://www.litera.com/capabilities/review).
+
+- **[Luminance](https://legalaimcp.com/servers/luminance)** — AI contract intelligence for review, negotiation and portfolio analysis.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.luminance.com/). [Primary source 1](https://www.luminance.com/) · [Primary source 2](https://www.luminance.com/platform/technology).
+
+## Case and Matter Management
+
+- **[Clio Manage](https://legalaimcp.com/servers/clio)** — Legal matter management with vendor-documented AI recommendations for matter activity.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.clio.com). [Primary source 1](https://docs.developers.clio.com/guides/clio-manage/) · [Primary source 2](https://help.clio.com/api/v2/help_center/en-us/articles/29765932267675.json).
+
+- **[Clio MCP Server (CHLEGAL community)](https://legalaimcp.com/servers/clio-matter-manager)** — Community MCP access to Clio matters, contacts, time entries, tasks, calendar and billing.  
+  Confirm current terms with the vendor. [Product / maintainer](https://github.com/CHLEGAL/clio-mcp-server). [Primary source 1](https://raw.githubusercontent.com/CHLEGAL/clio-mcp-server/main/README.md).
+
+- **[Legal MCP by Agentic Ops](https://legalaimcp.com/servers/legal-mcp-agentic)** — Community MCP for structured legal-document and research workflows.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/agentic-ops/legal-mcp). [Primary source 1](https://raw.githubusercontent.com/agentic-ops/legal-mcp/HEAD/README.md).
+
+- **[Smokeball](https://legalaimcp.com/servers/smokeball)** — Legal practice management with automatic time tracking and Archie AI.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.smokeball.com/). [Primary source 1](https://www.smokeball.com/).
+
+## Client Communication
+
+- **[LawDroid Builder](https://legalaimcp.com/servers/lawdroid)** — No-code AI workflows for intake conversations and document templates.  
+  Confirm current terms with the vendor. [Product / maintainer](https://lawdroid.com/builder/). [Primary source 1](https://lawdroid.com/builder/).
+
+- **[Smith.ai](https://legalaimcp.com/servers/smith-ai)** — AI and human receptionist options for call handling and intake.  
+  Confirm current terms with the vendor. [Product / maintainer](https://smith.ai/). [Primary source 1](https://smith.ai/).
+
+## Time and Billing
+
+- **[Checkbox First Pass Invoice Review](https://legalaimcp.com/servers/billing-ai-checkbox)** — Review invoice math, format and billing guidelines before your team approves payment.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.checkbox.ai/solutions/invoice-review). [Primary source 1](https://www.checkbox.ai/solutions/invoice-review).
+
+- **[FreshBooks MCP Server (roboulos community)](https://legalaimcp.com/servers/freshbooks-legal-billing)** — Community MCP tools for FreshBooks invoices, time entries and revenue reports.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/roboulos/freshbooks-mcp). [Primary source 1](https://raw.githubusercontent.com/roboulos/freshbooks-mcp/main/README.md).
+
+- **[Invoice My Clients MCP](https://legalaimcp.com/servers/invoice-my-clients-mcp)** — Vendor-hosted MCP for draft invoices, billable time and client records.  
+  Free and paid plans; confirm limits. [Product / maintainer](https://www.invoicemyclients.com/features/mcp-server). [Primary source 1](https://www.invoicemyclients.com/features/mcp-server).
+
+- **[Paymo MCP by feamster](https://legalaimcp.com/servers/paymo-time-tracker-mcp)** — Community connector for Paymo time entries, projects and invoice timesheets.  
+  Free software; connected services may charge. [Product / maintainer](https://github.com/feamster/paymo-mcp). [Primary source 1](https://raw.githubusercontent.com/feamster/paymo-mcp/HEAD/README.md).
+
+- **[TimeSolv](https://legalaimcp.com/servers/timesolv)** — Legal time and billing software with documented third-party integrations.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.timesolv.com/). [Primary source 1](https://www.timesolv.com/).
+
+## Governance and Compliance
+
+- **[Diligent Governance, Risk and Compliance](https://legalaimcp.com/servers/diligent-compliance)** — AI-assisted governance, risk, policy and third-party compliance products.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.diligent.com/). [Primary source 1](https://www.diligent.com/).
+
+- **[PageGuard MCP](https://legalaimcp.com/servers/pageguard-privacy-compliance)** — Developer privacy scans and draft documentation through MCP tools.  
+  Free and paid plans; confirm limits. [Product / maintainer](https://github.com/pageguard/pageguard-mcp). [Primary source 1](https://raw.githubusercontent.com/pageguard/pageguard-mcp/HEAD/README.md).
+
+- **[Relativity](https://legalaimcp.com/servers/relativity)** — AI-assisted legal-data review for discovery, investigations and contract work.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.relativity.com/). [Primary source 1](https://www.relativity.com/).
+
+## General Tools and Services
+
+- **[Claude](https://legalaimcp.com/servers/claude-legal)** — General-purpose AI assistant for drafting, document work and analysis.  
+  Free and paid plans; confirm limits. [Product / maintainer](https://claude.com/product/overview). [Primary source 1](https://claude.com/product/overview) · [Primary source 2](https://claude.com/pricing).
+
+- **[Composio MCP Integrations](https://legalaimcp.com/servers/composio-legal-toolkit)** — General-purpose authenticated tool integrations for AI assistants.  
+  Confirm current terms with the vendor. [Product / maintainer](https://docs.composio.dev/docs/single-toolkit-mcp). [Primary source 1](https://docs.composio.dev/docs/single-toolkit-mcp.md).
+
+- **[NYClaw Workflow Blueprint](https://legalaimcp.com/servers/nyclaw-custom-development)** — Review one law-firm handoff and identify a practical next step.  
+  Confirm current terms with the vendor. [Product / maintainer](https://nyclaw.io/law-firm-workflows). [Primary source 1](https://nyclaw.io/law-firm-workflows).
+
+- **[Scoro MCP](https://legalaimcp.com/servers/scoro-practice-analytics)** — Vendor connector for Scoro workspace tasks, time entries and financial reads.  
+  Confirm current terms with the vendor. [Product / maintainer](https://www.scoro.com/mcp/). [Primary source 1](https://www.scoro.com/mcp/).
+
+- **[Supabase MCP Server](https://legalaimcp.com/servers/supabase-legal-mcp)** — General developer connector for managing and querying Supabase projects.  
+  Confirm current terms with the vendor. [Product / maintainer](https://supabase.com/docs/guides/ai-tools/mcp). [Primary source 1](https://raw.githubusercontent.com/supabase-community/supabase-mcp/HEAD/README.md) · [Primary source 2](https://supabase.com/docs/guides/ai-tools/mcp).
+
+## Contributions and corrections
+
+Identify the actual vendor or maintainer, match every substantive claim to primary evidence, and distinguish documented features from tested operation. Do not infer a product from a similar name, a directory page, a working domain or generated prose. Prices, permissions, installers and legal specialization require their own support. Unsupported entries remain unpublished.
+
+[Admission and source-review policy](https://github.com/gbrussich52/legalaimcp/blob/main/docs/catalog-review.md) · [Corrections](CHANGELOG.md) · [Directory MCP](https://legalaimcp.com/mcp)
+
+This is software information, not legal advice or a vendor endorsement.
