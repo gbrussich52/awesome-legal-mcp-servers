@@ -2,7 +2,7 @@
 
 A source-backed directory of software relevant to law-firm workflows, maintained alongside [LegalAIMCP](https://legalaimcp.com/servers). It includes standalone AI products, documented MCP implementations and general tools; a general tool is not presented as a purpose-built legal product.
 
-**42 published products · primary documentation reviewed October 27, 2026.** Review covers the named product and the exact published description. Customer-account operation, security and legal-output accuracy have not been independently tested. A working link alone does not establish capability or MCP support.
+**42 published products · primary documentation reviewed October 27, 2026, with five changed-source reviews completed October 28.** Review covers the named product and the exact published description. Customer-account operation, security and legal-output accuracy have not been independently tested. A working link alone does not establish capability or MCP support.
 
 ## Legal Research
 
@@ -25,7 +25,7 @@ A source-backed directory of software relevant to law-firm workflows, maintained
   Free and paid plans; confirm limits. [Product / maintainer](https://mcp.courtlistener.com/). [Primary source 1](https://raw.githubusercontent.com/freelawproject/courtlistener-api-client/main/MCP_README.md).
 
 - **[Firecrawl Government & Legal Index](https://legalaimcp.com/servers/firecrawl-gov-index)** — Search an index of U.S. government and legal sources for AI-assisted research.
-  Free software; connected services may charge. [Product / maintainer](https://www.firecrawl.dev/gov-index). [Primary source 1](https://www.firecrawl.dev/gov-index).
+  Free software; connected services may charge. [Product / maintainer](https://www.firecrawl.dev/gov-index). [Primary source 1](https://www.firecrawl.dev/gov-index) · [Primary source 2](https://docs.firecrawl.dev/features/gov.md) · [Primary source 3](https://docs.firecrawl.dev/mcp-server.md).
 
 - **[German Law MCP (Ansvar Systems)](https://legalaimcp.com/servers/german-law-mcp)** — German legal-source access through the Ansvar MCP gateway or a self-hosted build.
   Free and paid plans; confirm limits. [Product / maintainer](https://github.com/Ansvar-Systems/German-law-mcp). [Primary source 1](https://raw.githubusercontent.com/Ansvar-Systems/German-law-mcp/main/README.md).
