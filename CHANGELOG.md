@@ -5,3 +5,5 @@
 2026-10-27: Rebuilt the list from 42 exact source-reviewed catalog entries. Withheld unestablished/misattributed entries, corrected real product and maintainer identities, removed unverified installer commands and price/performance claims, and linked primary evidence. General tools and community implementations are labeled explicitly.
 
 2026-10-28: Rechecked all 42 entries against the current approved ledger; added the focused official Firecrawl API/MCP sources after manual source review. Names, publication count and quarantine exclusions remain unchanged.
+
+2026-10-29: Manually re-reviewed nine changed sources; corrected Vincent by Clio branding and added its official trial/demo evidence. Fresh strict source checks cover42 products and53 primary URLs. This remains source review, not customer-account or legal-output certification.
