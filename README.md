@@ -2,7 +2,7 @@
 
 A source-backed directory of software relevant to law-firm workflows, maintained alongside [LegalAIMCP](https://legalaimcp.com/servers). It includes standalone AI products, documented MCP implementations and general tools; a general tool is not presented as a purpose-built legal product.
 
-**42 published products · primary documentation reviewed October 27, 2026, with five changed-source reviews completed October 28.** Review covers the named product and the exact published description. Customer-account operation, security and legal-output accuracy have not been independently tested. A working link alone does not establish capability or MCP support.
+**42 published products · primary documentation reviewed October 27, 2026, with five changed-source reviews completed October 28 and nine completed October 29.** Review covers the named product and the exact published description. Customer-account operation, security and legal-output accuracy have not been independently tested. A working link alone does not establish capability or MCP support.
 
 ## Legal Research
 
@@ -48,8 +48,8 @@ A source-backed directory of software relevant to law-firm workflows, maintained
 - **[US Legal MCP](https://legalaimcp.com/servers/us-legal-mcp)** — Community MCP research tools for US bills, regulations and court opinions.
   Free software; connected services may charge. [Product / maintainer](https://github.com/JamesANZ/us-legal-mcp). [Primary source 1](https://raw.githubusercontent.com/JamesANZ/us-legal-mcp/HEAD/README.md).
 
-- **[Vincent by vLex](https://legalaimcp.com/servers/vlex-vincent)** — AI-assisted legal research, analysis and configurable legal workflows.
-  Confirm current terms with the vendor. [Product / maintainer](https://vlex.com/vincent-ai). [Primary source 1](https://vlex.com/vincent-ai).
+- **[Vincent by Clio](https://legalaimcp.com/servers/vlex-vincent)** — AI-assisted legal research, analysis and configurable legal workflows.
+  Confirm current terms with the vendor. [Product / maintainer](https://vlex.com/vincent-ai). [Primary source 1](https://vlex.com/vincent-ai). [Primary source 2](https://vlex.com/free-trial). [Primary source 3](https://vlex.com/book-a-demo).
 
 ## Document and Contract Work
 
