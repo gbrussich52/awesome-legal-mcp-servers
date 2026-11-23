@@ -7,3 +7,5 @@
 2026-10-28: Rechecked all 42 entries against the current approved ledger; added the focused official Firecrawl API/MCP sources after manual source review. Names, publication count and quarantine exclusions remain unchanged.
 
 2026-10-29: Manually re-reviewed nine changed sources; corrected Vincent by Clio branding and added its official trial/demo evidence. Fresh strict source checks cover42 products and53 primary URLs. This remains source review, not customer-account or legal-output certification.
+
+2026-11-23: Added Court Rules from its catalog entry, after a request in pull request 2. The list now has 43 entries. The vendor site and MCP endpoint were reached directly; the MCP server asks for a sign-in or API key and its tools were not tested.
