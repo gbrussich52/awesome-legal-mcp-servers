@@ -2,7 +2,7 @@
 
 A source-backed directory of software relevant to law-firm workflows, maintained alongside [LegalAIMCP](https://legalaimcp.com/servers). It includes standalone AI products, documented MCP implementations and general tools; a general tool is not presented as a purpose-built legal product.
 
-**42 published products · primary documentation reviewed October 27, 2026, with five changed-source reviews completed October 28 and nine completed October 29.** Review covers the named product and the exact published description. Customer-account operation, security and legal-output accuracy have not been independently tested. A working link alone does not establish capability or MCP support.
+**43 published products · primary documentation reviewed October 27, 2026, with five changed-source reviews completed October 28 and nine completed October 29. Court Rules was added November 23, 2026.** Review covers the named product and the exact published description. Customer-account operation, security and legal-output accuracy have not been independently tested. A working link alone does not establish capability or MCP support.
 
 ## Legal Research
 
@@ -14,6 +14,9 @@ A source-backed directory of software relevant to law-firm workflows, maintained
 
 - **[CoCounsel Legal](https://legalaimcp.com/servers/cocounsel)** — Thomson Reuters legal AI for research, analysis and drafting.
   Confirm current terms with the vendor. [Product / maintainer](https://legal.thomsonreuters.com/en/products/cocounsel-legal). [Primary source 1](https://legal.thomsonreuters.com/en/products/cocounsel-legal).
+
+- **[Court Rules](https://legalaimcp.com/servers/court-rules)** — U.S. court rules, judge standing orders and a deadline calculator, with a remote MCP server.
+  Confirm current terms with the vendor. [Product / maintainer](https://www.courtrules.app/). [Primary source 1](https://www.courtrules.app/mcp).
 
 - **[CourtListener Citation Validation MCP (community)](https://legalaimcp.com/servers/courtlistener-citations-checker)** — Check case citations against the CourtListener index with a community MCP server.
   Free software; connected services may charge. [Product / maintainer](https://github.com/john-walkoe/courtlistener_citations_mcp). [Primary source 1](https://raw.githubusercontent.com/john-walkoe/courtlistener_citations_mcp/master/README.md).
